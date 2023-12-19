@@ -1,0 +1,45 @@
+<%-include("header")-%>
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active"  href="/">Home</a>
+          <a class="nav-link" href="/about">About</a>
+          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="/Logout">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <h3><%= title %>, <%= user %></h3> <!-- using locals -->
+
+<div class="center-div">
+
+
+<div class="container-fluid">
+    <div class="row row-cols-4 d-flex justify-content-center">
+     
+        <% for (var i = 1; i <= 8; i++) { %>
+            <div class="cols-12 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center " style="width: 18rem;">
+                <div class="card" style="width:12em;">
+                  <img src="/assets/1.jpg" class="card-img-top" alt="Image">
+                  <div class="card-body">
+                    <h5 class="card-title">Smart phone</h5>
+                    
+                  </div>
+                </div>
+            </div>
+              <% } %>
+    </div>
+</div>
+      
+      
+
+</div>
+
+<%-include("footer")-%>
